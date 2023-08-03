@@ -1,6 +1,7 @@
 package br.com.ava.aula_1_exercicio_1;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Agenda {
 
@@ -33,5 +34,22 @@ public class Agenda {
 
 	public void setContatos(ArrayList<Contato> contatos) {
 		this.contatos = contatos;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(contatos);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Agenda other = (Agenda) obj;
+		return Objects.equals(contatos, other.contatos);
 	}
 }

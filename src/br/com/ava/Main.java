@@ -15,7 +15,8 @@ public class Main {
 
 		contato1.ligar();
 		contato1.detalhar();
-
+		
+		agenda.deletar(contato2);
 		Contato encontrado = agenda.buscar("Maria");
 
 		if (encontrado != null) {
