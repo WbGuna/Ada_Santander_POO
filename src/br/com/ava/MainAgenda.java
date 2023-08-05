@@ -3,7 +3,7 @@ package br.com.ava;
 import br.com.ava.aula_1_exercicio_1.Agenda;
 import br.com.ava.aula_1_exercicio_1.Contato;
 
-public class Main {
+public class MainAgenda {
 
 	public static void main(String[] args) {
 		Agenda agenda = new Agenda();
