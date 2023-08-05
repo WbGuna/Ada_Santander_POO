@@ -68,6 +68,6 @@ public class Conta {
 
 	@Override
 	public String toString() {
-		return "Conta [cliente=" + cliente + ", numero=" + numero + ", saldo=" + saldo + "]";
+		return cliente + ", Conta numero=" + numero + ", saldo=" + saldo;
 	}  
 }

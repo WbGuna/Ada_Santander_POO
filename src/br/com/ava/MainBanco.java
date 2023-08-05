@@ -13,6 +13,7 @@ public class MainBanco {
 		Scanner scanner = new Scanner(System.in);
 
 		while (true) {
+			System.out.println("");
 			System.out.println("Menu:");
 			System.out.println("1. Criar conta");
 			System.out.println("2. Depositar");
@@ -34,6 +35,7 @@ public class MainBanco {
 				Cliente cliente = new Cliente(nome, cpf, email);
 				banco.criarConta(cliente, numero);
 				System.out.println("Conta criada com sucesso!");
+				System.out.println("");
 			} else if (opcao == 2) {
 				System.out.print("Digite o número da conta: ");
 				int numero = scanner.nextInt();
@@ -44,6 +46,7 @@ public class MainBanco {
 				} else {
 					System.out.println("Erro ao realizar depósito!");
 				}
+				System.out.println("");
 			} else if (opcao == 3) {
 				System.out.print("Digite o número da conta: ");
 				int numero = scanner.nextInt();
@@ -54,6 +57,7 @@ public class MainBanco {
 				} else {
 					System.out.println("Erro ao realizar saque!");
 				}
+				System.out.println("");
 			} else if (opcao == 4) {
 				System.out.print("Digite o número da conta: ");
 				int numero = scanner.nextInt();
@@ -63,10 +67,12 @@ public class MainBanco {
 				} else {
 					System.out.println(conta);
 				}
+				System.out.println("");
 			} else if (opcao == 5) {
 				break;
 			} else {
 				System.out.println("Opção inválida!");
+				System.out.println("");
 			}
 		}
 		scanner.close();
