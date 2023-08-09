@@ -2,7 +2,7 @@ package br.com.ava.aula_4_exercicio_1;
 
 import java.util.Scanner;
 
-public class TesteHerança {
+public class Teste {
 
 	public static void main(String[] args) {
 
