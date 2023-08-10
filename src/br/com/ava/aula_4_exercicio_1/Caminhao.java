@@ -1,10 +1,10 @@
 package br.com.ava.aula_4_exercicio_1;
 
-public class Caminhão extends Veiculo {
+public class Caminhao extends Veiculo {
 	
 	private int qtdRodas;
 
-	public Caminhão(String placa, String cor, String modelo, int ano, int qtdRodas) {
+	public Caminhao(String placa, String cor, String modelo, int ano, int qtdRodas) {
 		super(placa, cor, modelo, ano);
 		this.qtdRodas = qtdRodas;
 	}

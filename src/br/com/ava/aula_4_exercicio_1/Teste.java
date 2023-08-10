@@ -51,7 +51,7 @@ public class Teste {
 			System.out.print("Digite a quantidade de rodas: ");
 			int qtdRodas = sc.nextInt();
 
-			veiculo = new Caminhão(placa, cor, modelo, ano, qtdRodas);
+			veiculo = new Caminhao(placa, cor, modelo, ano, qtdRodas);
 			break;
 		default:
 			System.out.println("Opção inválida!");
