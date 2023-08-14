@@ -140,6 +140,7 @@ public class MenuController {
 		}
 	}
 
+	@SuppressWarnings("unused")
 	private void fazerPedido() {
 	    System.out.print("Já existe um cliente para este pedido? (S/N): ");
 	    String opcao = scanner.nextLine();
@@ -186,9 +187,13 @@ public class MenuController {
 	            scanner.nextLine();
 	            System.out.print("Nome do Prato: ");
 	            String nomePrato = scanner.nextLine();
-	            Prato prato = new Prato(nomePrato, 0.0, "");
-	            prato.setIdentificador(identificadorPrato);
-	            pratos.add(prato);
+
+				List<Prato> pratosRestaurante = restauranteService.listarPratosRestaurante(identificadorRestaurante, nomeRestaurante);
+				for (Prato prato : pratosRestaurante) {
+					if (prato.getIdentificador().equals(identificadorPrato)) {
+						pratos.add(prato);
+					}
+				}
 	        } else if (opcaoPrato == 0) {
 	            break;
 	        } else {

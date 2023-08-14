@@ -51,7 +51,5 @@ public class RestauranteRepository {
 			return restaurante.getPratos();
 		}
 		return null;
-	}
-	
-	
+	}	
 }

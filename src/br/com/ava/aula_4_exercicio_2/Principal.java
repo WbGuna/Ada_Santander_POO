@@ -13,11 +13,9 @@ public class Principal {
 		RestauranteRepository restauranteRepository = new RestauranteRepository();
 		ClienteRepository clienteRepository = new ClienteRepository();
 		PedidoRepository pedidoRepository = new PedidoRepository();
-		RestauranteService restauranteService = new RestauranteService(restauranteRepository, pedidoRepository);
+		RestauranteService restauranteService = new RestauranteService(restauranteRepository);
 		ClienteService clienteService = new ClienteService(clienteRepository, pedidoRepository, restauranteRepository, restauranteService);
 		MenuController menu = new MenuController(restauranteService, clienteService, clienteRepository);
 		menu.exibirMenu();
-
 	}
-
 }
