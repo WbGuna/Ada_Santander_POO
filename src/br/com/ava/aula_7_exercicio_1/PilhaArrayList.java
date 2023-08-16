@@ -18,7 +18,7 @@ public class PilhaArrayList<T> extends Pilha<T> {
 	@Override
 	public T pop() {
 		if (stack.isEmpty()) {
-			throw new RuntimeException("Stack is empty");
+			throw new RuntimeException("Pilha esta vazia");
 		}
 		return stack.remove(stack.size() - 1);
 	}
@@ -26,7 +26,7 @@ public class PilhaArrayList<T> extends Pilha<T> {
 	@Override
 	public T peek() {
 		if (stack.isEmpty()) {
-			throw new RuntimeException("Stack is empty");
+			throw new RuntimeException("Pilha esta vazia");
 		}
 		return stack.get(stack.size() - 1);
 	}
