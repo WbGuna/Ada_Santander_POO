@@ -26,7 +26,5 @@ class Vilao extends Personagem {
 	public String toString() {
 		return "Vilao [habilidade=" + habilidade + ", getNome()=" + getNome() + ", getTipo()=" + super.toString()
 				+ "]";
-	}
-    
-    
+	}  
 }
